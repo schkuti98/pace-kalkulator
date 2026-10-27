@@ -1,0 +1,15 @@
+{
+   "name": "Pace Kalkulator",
+   "short_name": "Pace",
+   "description": "Pace berechnen und Laufzeiten offline speichern",
+   "start_url": "./index.html",
+   "scope": "./",
+   "display": "standalone",
+   "background_color": "#eef5f3",
+   "theme_color": "#176b65",
+   "lang": "de",
+   "icons": [
+      { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+      { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+   ]
+}

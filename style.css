@@ -1,0 +1,130 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   background: #eef5f3;
+   color: #17332f;
+   font-family: Arial, sans-serif;
+}
+
+main {
+   max-width: 620px;
+   margin: 30px auto;
+   padding: 24px;
+   background: white;
+   border-radius: 14px;
+   box-shadow: 0 4px 18px #00000012;
+}
+
+h1 {
+   margin-top: 0;
+   color: #176b65;
+}
+h2 {
+   margin-top: 30px;
+   font-size: 21px;
+}
+
+label {
+   display: block;
+   margin: 15px 0 6px;
+   font-weight: bold;
+}
+
+input {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #a9bfba;
+   border-radius: 7px;
+   font-size: 16px;
+}
+
+.zeitfelder {
+   display: flex;
+   gap: 10px;
+}
+.zeitfelder > div {
+   flex: 1;
+   min-width: 0;
+}
+.zeitfelder label {
+   margin-top: 4px;
+   font-size: 13px;
+}
+
+button {
+   padding: 12px 15px;
+   border: 0;
+   border-radius: 7px;
+   background: #176b65;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+button:hover {
+   background: #10524d;
+}
+form > button {
+   width: 100%;
+   margin-top: 20px;
+}
+
+.ergebnisfeld {
+   margin-top: 25px;
+   padding: 5px 18px 12px;
+   border-radius: 10px;
+   background: #e5f3ef;
+}
+
+#ergebnis {
+   margin: 10px 0;
+   font-size: 30px;
+   font-weight: bold;
+}
+#meldung {
+   min-height: 18px;
+}
+.hinweis {
+   color: #4c6560;
+   font-size: 14px;
+}
+
+.eintrag {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 12px;
+   margin: 10px 0;
+   padding: 12px;
+   border: 1px solid #d6e5e1;
+   border-radius: 8px;
+   background: #f3f7f6;
+   touch-action: pan-y;
+}
+
+.eintrag p {
+   margin: 5px 0;
+}
+.loeschen {
+   padding: 9px;
+   background: #b53939;
+   font-size: 14px;
+}
+.loeschen:hover {
+   background: #8d2424;
+}
+
+@media (max-width: 650px) {
+   main {
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      border-radius: 0;
+   }
+   .eintrag {
+      flex-wrap: wrap;
+   }
+}

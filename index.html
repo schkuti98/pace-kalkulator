@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#176b65" />
+      <title>Pace Kalkulator</title>
+      <link rel="manifest" href="manifest.json" />
+      <link rel="icon" href="icons/icon-192.png" />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <main>
+         <h1>Pace Kalkulator</h1>
+         <p>Berechne deine Zeit pro Kilometer.</p>
+
+         <form id="formular">
+            <label for="strecke">Strecke in Metern</label>
+            <input id="strecke" type="number" min="1" step="1" placeholder="z. B. 5000" required />
+
+            <label>Dauer</label>
+            <div class="zeitfelder">
+               <div>
+                  <label for="stunden">Stunden</label><input id="stunden" type="number" min="0" step="1" value="0" required />
+               </div>
+               <div>
+                  <label for="minuten">Minuten</label
+                  ><input id="minuten" type="number" min="0" max="59" step="1" value="0" required />
+               </div>
+               <div>
+                  <label for="sekunden">Sekunden</label
+                  ><input id="sekunden" type="number" min="0" max="59" step="1" value="0" required />
+               </div>
+            </div>
+
+            <label for="datum">Datum</label>
+            <input id="datum" type="date" required />
+            <button type="submit">Berechnen und speichern</button>
+         </form>
+
+         <section class="ergebnisfeld" aria-live="polite">
+            <h2>Deine Pace</h2>
+            <p id="ergebnis">--:-- min/km</p>
+            <p id="meldung"></p>
+         </section>
+
+         <section>
+            <h2>Gespeicherte Einträge</h2>
+            <p class="hinweis">Zum Löschen einen Eintrag nach rechts wischen. Am PC geht es mit dem Löschen-Knopf.</p>
+            <div id="eintraege"></div>
+         </section>
+      </main>
+      <script src="script.js"></script>
+   </body>
+</html>
